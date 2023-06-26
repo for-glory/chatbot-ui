@@ -1,5 +1,5 @@
-import { IconFileExport, IconSettings } from '@tabler/icons-react';
-import { useContext, useState } from 'react';
+import { IconFileExport, IconLogout, IconSettings } from '@tabler/icons-react';
+import { useCallback, useContext, useState } from 'react';
 
 import { useTranslation } from 'next-i18next';
 
@@ -14,9 +14,14 @@ import ChatbarContext from '../Chatbar.context';
 import { ClearConversations } from './ClearConversations';
 import { PluginKeys } from './PluginKeys';
 
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { useRouter } from 'next/navigation'
+
 export const ChatbarSettings = () => {
   const { t } = useTranslation('sidebar');
   const [isSettingDialogOpen, setIsSettingDialog] = useState<boolean>(false);
+  const router = useRouter()
+  const supabase = createClientComponentClient()
 
   const {
     state: {
@@ -36,6 +41,11 @@ export const ChatbarSettings = () => {
     handleApiKeyChange,
   } = useContext(ChatbarContext);
 
+  const logout = useCallback(async () => {
+    await supabase.auth.signOut()
+    router.push('/login')
+  }, [supabase, router]);
+
   return (
     <div className="flex flex-col items-center space-y-1 border-t border-white/20 pt-1 text-sm">
       {conversations.length > 0 ? (
@@ -54,6 +64,12 @@ export const ChatbarSettings = () => {
         text={t('Settings')}
         icon={<IconSettings size={18} />}
         onClick={() => setIsSettingDialog(true)}
+      />
+
+      <SidebarButton
+        text={t('Logout')}
+        icon={<IconLogout size={18} />}
+        onClick={() => logout()}
       />
 
       {!serverSideApiKeyIsSet ? (
