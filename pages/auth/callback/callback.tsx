@@ -31,7 +31,7 @@ export default function Callback() {
     <div className="h-screen w-screen flex justify-center">
       <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
         <p className="text-center text-neutral-400">
-          You'll be redirected shortly...
+          You&apos;ll be redirected shortly...
         </p>
       </div>
     </div>

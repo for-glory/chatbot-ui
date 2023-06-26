@@ -72,7 +72,7 @@ export default function Login() {
                   Sign In
                 </button>
                 <p className="text-sm text-neutral-500 text-center">
-                  Don't have an account?
+                  Don&apos;t have an account?
                   <button
                     className="ml-1 text-white underline"
                     onClick={() => setView('sign-up')}
