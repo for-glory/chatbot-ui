@@ -10,26 +10,30 @@ export default function Callback() {
 
   useEffect(() => {
     const { code } = router.query
+
+    if (!code) return () => {}
+
     const exchangeCodeForSession = async (code: any) => {
-      await supabase.auth.exchangeCodeForSession(code)
-      router.replace('/')
+      try {
+        await supabase.auth.exchangeCodeForSession(code)
+      } catch (e) {
+      } finally {
+        router.replace('/')
+      }
     }
 
-    if (code) {
-      exchangeCodeForSession(code)
-    }
+    exchangeCodeForSession(code)
 
     return () => {}
   }, [router])
 
-  // return (
-  //   <div className="h-screen w-screen flex justify-center">
-  //     <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
-  //       <p className="text-center text-neutral-400">
-  //         You'll be redirected shortly...
-  //       </p>
-  //     </div>
-  //   </div>
-  // )
-  return null
+  return (
+    <div className="h-screen w-screen flex justify-center">
+      <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
+        <p className="text-center text-neutral-400">
+          You'll be redirected shortly...
+        </p>
+      </div>
+    </div>
+  )
 }
