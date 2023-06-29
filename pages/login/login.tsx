@@ -17,7 +17,7 @@ export default function Login() {
       email,
       password,
       options: {
-        emailRedirectTo: `${location.origin}/auth/callback`,
+        emailRedirectTo: `${process.env.SITE_URL}/auth/callback`,
       },
     })
     setView('check-email')
@@ -28,6 +28,17 @@ export default function Login() {
     await supabase.auth.signInWithPassword({
       email,
       password,
+    })
+    router.push('/')
+  }
+
+  const handleSignInWithMagicLink = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: `${process.env.SITE_URL}/auth/callback`,
+      },
     })
     router.push('/')
   }
@@ -43,7 +54,7 @@ export default function Login() {
         ) : (
           <form
             className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2"
-            onSubmit={view === 'sign-in' ? handleSignIn : handleSignUp}
+            onSubmit={view === 'sign-in' ? handleSignIn : view === 'sign-in-magic' ? handleSignInWithMagicLink : handleSignUp}
           >
             <label className="text-md text-neutral-400" htmlFor="email">
               Email
@@ -55,17 +66,21 @@ export default function Login() {
               value={email}
               placeholder="you@example.com"
             />
-            <label className="text-md text-neutral-400" htmlFor="password">
-              Password
-            </label>
-            <input
-              className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
-              type="password"
-              name="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-              placeholder="••••••••"
-            />
+            {view !== 'sign-in-magic' ? (
+              <>
+                <label className="text-md text-neutral-400" htmlFor="password">
+                  Password
+                </label>
+                <input
+                  className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
+                  type="password"
+                  name="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  placeholder="••••••••"
+                />
+              </>
+            ) : null}
             {view === 'sign-in' ? (
               <>
                 <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6">
@@ -78,6 +93,36 @@ export default function Login() {
                     onClick={() => setView('sign-up')}
                   >
                     Sign Up Now
+                  </button>
+                  &nbsp;or&nbsp;
+                  <button
+                    className="ml-1 text-white underline"
+                    onClick={() => setView('sign-in-magic')}
+                  >
+                    Sign In With Magic Link
+                  </button>
+                </p>
+              </>
+            ) : null}
+            {view === 'sign-in-magic' ? (
+              <>
+                <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6">
+                  Sign In With Magic Link
+                </button>
+                <p className="text-sm text-neutral-500 text-center">
+                  Don&apos;t have an account?
+                  <button
+                    className="ml-1 text-white underline"
+                    onClick={() => setView('sign-up')}
+                  >
+                    Sign Up Now
+                  </button>
+                  &nbsp;or&nbsp;
+                  <button
+                    className="ml-1 text-white underline"
+                    onClick={() => setView('sign-in')}
+                  >
+                    Sign In
                   </button>
                 </p>
               </>
@@ -94,6 +139,13 @@ export default function Login() {
                     onClick={() => setView('sign-in')}
                   >
                     Sign In Now
+                  </button>
+                  &nbsp;or&nbsp;
+                  <button
+                    className="ml-1 text-white underline"
+                    onClick={() => setView('sign-in-magic')}
+                  >
+                    Sign In With Magic Link
                   </button>
                 </p>
               </>
