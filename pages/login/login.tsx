@@ -17,7 +17,7 @@ export default function Login() {
       email,
       password,
       options: {
-        emailRedirectTo: `${location.origin}/auth/callback`,
+        emailRedirectTo: `${process.env.SITE_URL}/auth/callback`,
       },
     })
     setView('check-email')
