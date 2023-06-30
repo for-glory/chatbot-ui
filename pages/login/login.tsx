@@ -40,7 +40,7 @@ export default function Login() {
         emailRedirectTo: `${process.env.SITE_URL}/auth/callback`,
       },
     })
-    router.push('/')
+    setView('check-email')
   }
 
   return (
@@ -49,7 +49,7 @@ export default function Login() {
         {view === 'check-email' ? (
           <p className="text-center text-neutral-400">
             Check <span className="font-bold text-white">{email}</span> to
-            continue signing up
+            continue
           </p>
         ) : (
           <form
