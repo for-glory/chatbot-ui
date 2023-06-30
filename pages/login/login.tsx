@@ -17,7 +17,7 @@ export default function Login() {
       email,
       password,
       options: {
-        emailRedirectTo: `${process.env.SITE_URL}/auth/callback`,
+        emailRedirectTo: `${location.origin}/auth/callback`,
       },
     })
     setView('check-email')
@@ -37,7 +37,7 @@ export default function Login() {
     await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: `${process.env.SITE_URL}/auth/callback`,
+        emailRedirectTo: `${location.origin}/auth/callback`,
       },
     })
     setView('check-email')
