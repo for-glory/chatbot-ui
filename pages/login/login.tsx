@@ -3,6 +3,9 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import Image from 'next/image'
+
+import logoImage from './logo.png'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -56,6 +59,12 @@ export default function Login() {
             className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2"
             onSubmit={view === 'sign-in' ? handleSignIn : view === 'sign-in-magic' ? handleSignInWithMagicLink : handleSignUp}
           >
+            <div className="flex justify-center mb-12">
+              <Image
+                src={logoImage}
+                alt="Chatbot UI"
+              />
+            </div>
             <label className="text-md text-neutral-400" htmlFor="email">
               Email
             </label>
