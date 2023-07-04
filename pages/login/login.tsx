@@ -7,7 +7,7 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [view, setView] = useState('sign-in')
+  const [view, setView] = useState('sign-in-magic')
   const router = useRouter()
   const supabase = createClientComponentClient()
 
@@ -109,7 +109,7 @@ export default function Login() {
                 <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6">
                   Sign In With Magic Link
                 </button>
-                <p className="text-sm text-neutral-500 text-center">
+                {/* <p className="text-sm text-neutral-500 text-center">
                   Don&apos;t have an account?
                   <button
                     className="ml-1 text-white underline"
@@ -124,7 +124,7 @@ export default function Login() {
                   >
                     Sign In
                   </button>
-                </p>
+                </p> */}
               </>
             ) : null}
             {view === 'sign-up' ? (
