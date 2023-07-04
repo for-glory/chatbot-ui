@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import Image from 'next/image'
+import { toast } from 'react-hot-toast'
 
 import logoImage from './logo.png'
 
@@ -37,13 +38,17 @@ export default function Login() {
 
   const handleSignInWithMagicLink = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    await supabase.auth.signInWithOtp({
+    const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
         emailRedirectTo: `${location.origin}/auth/callback`,
       },
     })
-    setView('check-email')
+    if (error) {
+      toast.error(error.message)
+    } else {
+      setView('check-email')
+    }
   }
 
   return (
