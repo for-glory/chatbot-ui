@@ -3,11 +3,15 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import Image from 'next/image'
+import { toast } from 'react-hot-toast'
+
+import logoImage from './logo.png'
 
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [view, setView] = useState('sign-in')
+  const [view, setView] = useState('sign-in-magic')
   const router = useRouter()
   const supabase = createClientComponentClient()
 
@@ -34,13 +38,17 @@ export default function Login() {
 
   const handleSignInWithMagicLink = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    await supabase.auth.signInWithOtp({
+    const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
         emailRedirectTo: `${location.origin}/auth/callback`,
       },
     })
-    setView('check-email')
+    if (error) {
+      toast.error(error.message)
+    } else {
+      setView('check-email')
+    }
   }
 
   return (
@@ -56,6 +64,12 @@ export default function Login() {
             className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2"
             onSubmit={view === 'sign-in' ? handleSignIn : view === 'sign-in-magic' ? handleSignInWithMagicLink : handleSignUp}
           >
+            <div className="flex justify-center mb-12">
+              <Image
+                src={logoImage}
+                alt="Chatbot UI"
+              />
+            </div>
             <label className="text-md text-neutral-400" htmlFor="email">
               Email
             </label>
@@ -109,7 +123,7 @@ export default function Login() {
                 <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6">
                   Sign In With Magic Link
                 </button>
-                <p className="text-sm text-neutral-500 text-center">
+                {/* <p className="text-sm text-neutral-500 text-center">
                   Don&apos;t have an account?
                   <button
                     className="ml-1 text-white underline"
@@ -124,7 +138,7 @@ export default function Login() {
                   >
                     Sign In
                   </button>
-                </p>
+                </p> */}
               </>
             ) : null}
             {view === 'sign-up' ? (
