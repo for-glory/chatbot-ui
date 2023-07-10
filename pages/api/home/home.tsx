@@ -5,7 +5,8 @@ import { GetServerSideProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
-
+import Image from 'next/image'
+import logoImage from './logo.png'
 import { useCreateReducer } from '@/hooks/useCreateReducer';
 
 import useErrorService from '@/services/errorService';
@@ -361,6 +362,12 @@ const Home = ({
     >
       <Head>
         <title>Chatbot UI</title>
+        <div className="flex justify-center mb-12">
+          <Image
+            src={logoImage}
+            alt="Chatbot UI"
+          />
+        </div>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"
