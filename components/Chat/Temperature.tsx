@@ -40,7 +40,7 @@ export const TemperatureSlider: FC<Props> = ({
         )}
       </span>
       <span className="mt-2 mb-1 text-center text-neutral-900 dark:text-neutral-100">
-        {temperature.toFixed(1)}
+        {temperature.toFixed(0.7)}
       </span>
       <input
         className="cursor-pointer"
