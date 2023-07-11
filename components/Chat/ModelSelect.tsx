@@ -2,10 +2,12 @@ import { IconExternalLink } from '@tabler/icons-react';
 import { useContext } from 'react';
 
 import { useTranslation } from 'next-i18next';
-
+import Image from 'next/image'
 import { OpenAIModel } from '@/types/openai';
 
 import HomeContext from '@/pages/api/home/home.context';
+
+import logoImage from './logo.png'
 
 export const ModelSelect = () => {
   const { t } = useTranslation('chat');
@@ -27,6 +29,12 @@ export const ModelSelect = () => {
   };
 
   return (
+    <div className="flex justify-center mb-12">
+      <Image
+        src={logoImage}
+        alt="Chatbot UI"
+      />
+    </div>
     <div className="flex flex-col">
       <label className="mb-2 text-left text-neutral-700 dark:text-neutral-400">
         {t('Model')}
