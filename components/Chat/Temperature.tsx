@@ -44,13 +44,7 @@ export const TemperatureSlider: FC<Props> = ({
       </span>
       <input
         type="hidden"
-        className="cursor-pointer"
-        type="range"
-        min={0}
-        max={1}
-        step={0.1}
         value={0.7}
-        onChange={handleChange}
       />
     </div>
   );
