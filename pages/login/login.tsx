@@ -70,6 +70,15 @@ export default function Login() {
                 alt="Chatbot UI"
               />
             </div>
+
+            <div style="color: white;"> 
+              Link to: Training and learning patform
+            </div>
+            
+            <div style="color: white;"> 
+              Accept terms and conditions <input type="checkbox" id="scales" name="scales" checked="">
+            </div>
+                  
             <label className="text-md text-neutral-400" htmlFor="email">
               Email
             </label>
@@ -119,15 +128,7 @@ export default function Login() {
               </>
             ) : null}
             {view === 'sign-in-magic' ? (
-              <>
-                <div style="color: white;"> 
-                  Link to: Training and learning patform
-                </div>
-                
-                <div style="color: white;"> 
-                  Accept terms and conditions <input type="checkbox" id="scales" name="scales" checked="">
-                </div>
-                  
+              <>                  
                 <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6">
                   Sign In With Magic Link 2
                 </button>
