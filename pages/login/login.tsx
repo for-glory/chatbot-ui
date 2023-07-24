@@ -71,11 +71,11 @@ export default function Login() {
               />
             </div>
 
-            <div style="color: white;"> 
+            <div className="text-white"> 
               Link to: Training and learning patform
             </div>
             
-            <div style="color: white;"> 
+            <div className="text-white"> 
               Accept terms and conditions <input type="checkbox" id="scales" name="scales" checked="" />
             </div>
                   
