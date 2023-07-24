@@ -76,7 +76,7 @@ export default function Login() {
             </div>
             
             <div style="color: white;"> 
-              Accept terms and conditions <input type="checkbox" id="scales" name="scales" checked="">
+              Accept terms and conditions <input type="checkbox" id="scales" name="scales" checked="" />
             </div>
                   
             <label className="text-md text-neutral-400" htmlFor="email">
