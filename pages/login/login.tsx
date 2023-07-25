@@ -51,6 +51,8 @@ export default function Login() {
     }
   }
 
+  const [disabled, setDisabled] = useState(false);
+  
   return (
     <div className="h-screen w-screen flex justify-center">
       <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
