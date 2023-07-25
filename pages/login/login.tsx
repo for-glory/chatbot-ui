@@ -76,6 +76,7 @@ export default function Login() {
 
             <div className="container">
                 <label className="text-white">Link to: Training and learning patform</label>
+                <br />
                 <label className="text-white">Accept terms and conditions</label>
                 <div className="input-group">
                     <input
