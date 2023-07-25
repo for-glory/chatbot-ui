@@ -71,6 +71,20 @@ export default function Login() {
               />
             </div>
 
+
+            <div className="container">
+                <h3>React Js Enable/Disable Input Text field based on checkbox value</h3>
+                <div className="input-group">
+                    <input
+                        type="checkbox"
+                        checked={disabled}
+                        onChange={(e) => setDisabled(e.target.checked)}
+                    />
+                    <input type="text" disabled={!disabled} />
+                </div>
+            </div>
+
+            
             <div className="text-white"> 
               Link to: Training and learning patform
             </div>
