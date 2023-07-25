@@ -75,24 +75,22 @@ export default function Login() {
 
 
             <div className="container">
-                <h3>React Js Enable/Disable Input Text field based on checkbox value</h3>
+                <div className="text-white">Link to: Training and learning patform</div>
+                <div className="text-white">Accept terms and conditions</div>
                 <div className="input-group">
                     <input
                         type="checkbox"
                         checked={disabled}
                         onChange={(e) => setDisabled(e.target.checked)}
                     />
-                    <input type="text" disabled={!disabled} />
+                    <input type="text" 
+                           className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
+                           name="email"
+                           onChange={(e) => setEmail(e.target.value)}
+                           value={email}
+                           placeholder="you@example.com"
+                           disabled={!disabled} />
                 </div>
-            </div>
-
-            
-            <div className="text-white"> 
-              Link to: Training and learning patform
-            </div>
-            
-            <div className="text-white"> 
-              Accept terms and conditions <input type="checkbox" id="terms_conditions" name="terms_conditions" />
             </div>
                   
             <label className="text-md text-neutral-400" htmlFor="email">
