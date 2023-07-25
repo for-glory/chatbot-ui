@@ -75,8 +75,8 @@ export default function Login() {
 
 
             <div className="container">
-                <div className="text-white">Link to: Training and learning patform</div>
-                <div className="text-white">Accept terms and conditions</div>
+                <label className="text-white">Link to: Training and learning patform</label>
+                <label className="text-white">Accept terms and conditions</label>
                 <div className="input-group">
                     <input
                         type="checkbox"
@@ -93,16 +93,7 @@ export default function Login() {
                 </div>
             </div>
                   
-            <label className="text-md text-neutral-400" htmlFor="email">
-              Email
-            </label>
-            <input
-              className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              placeholder="you@example.com"
-            />
+  
             {view !== 'sign-in-magic' ? (
               <>
                 <label className="text-md text-neutral-400" htmlFor="password">
