@@ -75,9 +75,9 @@ export default function Login() {
 
 
             <div className="container">
-                <label className="text-white">Link to: Training and learning patform</label>
+                <label className="text-md text-neutral-400">Link to: Training and learning patform</label>
                 <br />
-                <label className="text-white">Accept terms and conditions</label>
+                <label className="text-md text-neutral-400">Accept terms and conditions</label>
                 <div className="input-group">
                     <input
                         type="checkbox"
