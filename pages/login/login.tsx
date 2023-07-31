@@ -85,6 +85,7 @@ export default function Login() {
                         checked={disabled}
                         onChange={(e) => setDisabled(e.target.checked)}
                     />
+                  <br />
                     <input type="text" 
                            className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
                            name="email"
@@ -129,15 +130,15 @@ export default function Login() {
                     className="ml-1 text-white underline"
                     onClick={() => setView('sign-in-magic')}
                   >
-                    Sign In With Magic Link 1
+                    Sign In With Magic Link
                   </button>
                 </p>
               </>
             ) : null}
             {view === 'sign-in-magic' ? (
               <>                  
-                <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6">
-                  Sign In With Magic Link 2
+                <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6" disabled={!disabled}>
+                  Sign In With Magic Link 
                 </button>
                 {/* <p className="text-sm text-neutral-500 text-center">
                   Don&apos;t have an account?
@@ -175,7 +176,7 @@ export default function Login() {
                     className="ml-1 text-white underline"
                     onClick={() => setView('sign-in-magic')}
                   >
-                    Sign In With Magic Link 3
+                    Sign In With Magic Link 
                   </button>
                 </p>
               </>
