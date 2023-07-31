@@ -87,13 +87,7 @@ export default function Login() {
                    <input type="checkbox" checked={disabled} />
                 </div>
               
-                <div className="input-group">
-                    <input
-                        type="checkbox"
-                        checked={disabled}
-                        onChange={(e) => setDisabled(e.target.checked)}
-                    />
-                  <br />
+                <div className="input-group">      
                     <input type="text" 
                            className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
                            name="email"
