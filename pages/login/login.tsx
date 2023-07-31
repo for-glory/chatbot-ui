@@ -83,10 +83,12 @@ export default function Login() {
                 <br />
 
                 <div className="input-group">
-                   <label className="text-md text-neutral-400">Accept terms and conditions</label>
+                   <label className="text-md text-neutral-400">Accept terms and conditions</label> &nbsp;&nbsp;&nbsp;&nbsp;
                    <input type="checkbox" checked={disabled} />
                 </div>
-              
+
+                <br>
+                  
                 <div className="input-group">      
                     <input type="text" 
                            className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
