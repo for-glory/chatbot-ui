@@ -110,7 +110,7 @@ export default function Login() {
                 </div>
                 <div class="card" style={Styles.pStyles}>
                   <div class="card-body">
-                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
+                    aazd dazadz adz dzda z
                   </div>
                 </div>
             </div>
