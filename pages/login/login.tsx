@@ -83,7 +83,7 @@ export default function Login() {
                         checked={disabled}
                         onChange={(e) => setDisabled(e.target.checked)}
                     />
-                <div className="input-group">                  
+                <div>                  
                     <input type="text" 
                            className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
                            name="email"
@@ -91,6 +91,11 @@ export default function Login() {
                            value={email}
                            placeholder="you@example.com"
                            disabled={!disabled} />
+                </div>
+                <div class="card" style="box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(244,67,54,.4);">
+                  <div class="card-body" style="background: linear-gradient(60deg,#ef5350,#e53935);">
+                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
+                  </div>
                 </div>
             </div>
                   
