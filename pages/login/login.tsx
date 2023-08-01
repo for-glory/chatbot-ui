@@ -16,18 +16,18 @@ export default function Login() {
   const supabase = createClientComponentClient()
 
 
+  const Styles = {
+    divStyles: {
+        width: "100%",
+    },
+    pStyles: {
+        background: "linear-gradient(60deg,#ef5350,#e53935)",
+    },
+};
+
+  
   const css = `
-    .full_width_size {
-        width: 100%;
-    }
 
-    .red_back_color {
-        box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(244,67,54,.4);
-    }
-
-    .red_back_shadow {
-        background: linear-gradient(60deg,#ef5350,#e53935)
-    }
 `
 
   
@@ -100,15 +100,16 @@ export default function Login() {
                     />
                 <div>                  
                     <input type="text" 
-                           className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100 full_width_size"
+                           className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
+                           style={Styles.divStyles}
                            name="email"
                            onChange={(e) => setEmail(e.target.value)}
                            value={email}
                            placeholder="you@example.com"
                            disabled={!disabled} />
                 </div>
-                <div class="card" className="red_back_color">
-                  <div class="card-body" className="red_back_shadow">
+                <div class="card" style={Styles.pStyles}>
+                  <div class="card-body">
                     The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
                   </div>
                 </div>
