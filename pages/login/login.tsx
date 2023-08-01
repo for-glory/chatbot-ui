@@ -90,7 +90,7 @@ export default function Login() {
               />
             </div>
 
-            <div className="container">
+            <div className="">
                               
                 <label className="text-md text-neutral-400">Link to: Training and learning patform</label>
                 <label className="text-md text-neutral-400">Accept terms and conditions</label>  
