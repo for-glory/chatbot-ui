@@ -21,10 +21,10 @@ export default function Login() {
         width: "100%",
     },
     pStyles: {
-        background: "linear-gradient(60deg,#ef5350,#e53935)",
+        background: "linear-gradient(60deg,#ef535000,#e5393533)",
     },
     borderShadowStyles: {
-        boxShadow: "0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(244,67,54,.4)",
+        boxShadow: "0 4px 20px 0 rgba(0,0,0,.14),0 5px 5px -5px rgba(244,67,54,.4)",
     },
     textStyles: {
         color: "black",
@@ -90,7 +90,7 @@ export default function Login() {
               />
             </div>
 
-            <div className="">
+            
                               
                 <label className="text-md text-neutral-400">Link to: Training and learning patform</label>
                 <label className="text-md text-neutral-400">Accept terms and conditions</label>  
@@ -109,12 +109,12 @@ export default function Login() {
                            placeholder="you@example.com"
                            disabled={!disabled} />
                 </div>
-                <div className="card" style={Styles.pStyles}>
+                <div className="card mb-6" style={Styles.pStyles}>
                   <div className="card-body" style={Styles.borderShadowStyles}>
                     aazd dazadz adz dzda z
                   </div>
                 </div>
-            </div>
+          
                   
   
             {view !== 'sign-in-magic' ? (
