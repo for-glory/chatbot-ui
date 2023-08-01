@@ -26,11 +26,6 @@ export default function Login() {
 };
 
   
-  const css = `
-
-`
-
-  
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     await supabase.auth.signUp({
