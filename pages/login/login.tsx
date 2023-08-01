@@ -77,14 +77,13 @@ export default function Login() {
             <div className="container">
                               
                 <label className="text-md text-neutral-400">Link to: Training and learning patform</label>
-                <label className="text-md text-neutral-400">Accept terms and conditions</label>
-                <div className="input-group">
-                    <input
+                <label className="text-md text-neutral-400">Accept terms and conditions</label>  
+                <input
                         type="checkbox"
                         checked={disabled}
                         onChange={(e) => setDisabled(e.target.checked)}
                     />
-                  <br />
+                <div className="input-group">                  
                     <input type="text" 
                            className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
                            name="email"
