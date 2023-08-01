@@ -103,8 +103,8 @@ export default function Login() {
                            placeholder="you@example.com"
                            disabled={!disabled} />
                 </div>
-                <div class="card" style={Styles.pStyles}>
-                  <div class="card-body">
+                <div className="card" style={Styles.pStyles}>
+                  <div className="card-body">
                     aazd dazadz adz dzda z
                   </div>
                 </div>
