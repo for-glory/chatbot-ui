@@ -21,7 +21,7 @@ export default function Login() {
         width: "100%",
     },
     pStyles: {
-        background: "linear-gradient(60deg,#ef5350,#e53935)",
+        background: "#f85149",
     },
 };
 
