@@ -118,8 +118,8 @@ export default function Login() {
               <div className="card mb-6" style={Styles.pStyles}>
                 <div className="card-body" style={Styles.borderShadowStyles}>
 
-                    <div class="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-                       <div class="min-w-[40px] text-right font-bold">
+                    <div className="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
+                       <div className="min-w-[40px] text-right font-bold">
                           <svg fill="#ffa200" width="64px" height="64px" viewBox="-441.6 -441.6 2803.20 2803.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffa200" stroke-width="0.019200000000000002">
                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="38.4"></g>
@@ -128,14 +128,14 @@ export default function Login() {
                              </g>
                           </svg>
                        </div>
-                       <div class="prose mt-[-2px] w-full dark:prose-invert">
-                          <div class="flex flex-row">
-                             <div class="prose dark:prose-invert flex-1">
+                       <div className="prose mt-[-2px] w-full dark:prose-invert">
+                          <div className="flex flex-row">
+                             <div className="prose dark:prose-invert flex-1">
                                 <p>I confirm that I have completed the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">GOPA Group AI Training</a> and that I have read and agree with the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">GOPA Group Policy on the Use of Generative AI</a>. 
                                    I acknowledge the importance of adhering to these guidelines to maintain the integrity and effectiveness of our GOPA Group AI Chatbot</p>
                              </div>
-                             <div class="md:-mr-8 ml-1 md:ml-0 flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start justify-end md:justify-start">
-                                <button class="invisible group-hover:visible focus:visible text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                             <div className="md:-mr-8 ml-1 md:ml-0 flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start justify-end md:justify-start">
+                                <button className="invisible group-hover:visible focus:visible text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-copy">
                                       <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"></path>
                                       <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
