@@ -28,42 +28,7 @@ export default function Login() {
     },
     textStyles: {
         color: "black",
-    },    
-
-    .alert {
-      color: "#fff",
-      display: "flex",
-      padding: "0",
-    },
-    .alert-primary {
-      --bs-alert-color: "var(--bs-primary-text-emphasis)",
-      --bs-alert-bg: "var(--bs-primary-bg-subtle)",
-      --bs-alert-border-color: "var(--bs-primary-border-subtle)",
-      --bs-alert-link-color: "var(--bs-primary-text-emphasis)",
-    },
-    .alert-dismissible {
-      padding-right: "2.85rem",
-    },
-    .alert {
-      --bs-alert-bg: "transparent",
-      --bs-alert-padding-x: "0.95rem",
-      --bs-alert-padding-y: "0.95rem",
-      --bs-alert-margin-bottom: "1rem",
-      --bs-alert-color: "inherit",
-      --bs-alert-border-color: "transparent",
-      --bs-alert-border: "0 solid var(--bs-alert-border-color)",
-      --bs-alert-border-radius: "var(--bs-border-radius)",
-      --bs-alert-link-color: "inherit",
-      background-color: "var(--bs-alert-bg)",
-      border: "var(--bs-alert-border)",
-      border-radius: "var(--bs-alert-border-radius)",
-      color: "var(--bs-alert-color)",
-      margin-bottom: "var(--bs-alert-margin-bottom)",
-      padding: "var(--bs-alert-padding-y) var(--bs-alert-padding-x)",
-      position: "relative",
-    },
-    
-      
+    },       
 };
 
   
