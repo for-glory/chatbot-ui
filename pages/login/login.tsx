@@ -24,7 +24,8 @@ export default function Login() {
         background: "linear-gradient(60deg,#ef535000,#e5393533)",
     },
     borderShadowStyles: {
-        boxShadow: "0 4px 20px 0 rgba(0,0,0,.14),0 5px 5px -5px rgba(244,67,54,.4)",
+        border: "1px solid orange",
+        padding: "12px",
     },
     textStyles: {
         color: "black",
@@ -115,7 +116,8 @@ export default function Login() {
             
               <div className="card mb-6" style={Styles.pStyles}>
                 <div className="card-body" style={Styles.borderShadowStyles}>
-                  aazd dazadz adz dzda z
+                  I confirm that I have completed the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">GOPA Group AI Training</a> and that I have read and agree with the href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">GOPA Group Policy on the Use of Generative AI</a>. 
+                  I acknowledge the importance of adhering to these guidelines to maintain the integrity and effectiveness of our GOPA Group AI Chatbot
                 </div>
               </div>
           
@@ -152,7 +154,7 @@ export default function Login() {
                     className="ml-1 text-white underline"
                     onClick={() => setView('sign-in-magic')}
                   >
-                    Sign In With Magic Link
+                    Sign In
                   </button>
                 </p>
               </>
@@ -160,7 +162,7 @@ export default function Login() {
             {view === 'sign-in-magic' ? (
               <>                  
                 <button className="bg-green-700 rounded px-4 py-2 text-neutral-200 mb-6" disabled={!disabled}>
-                  Sign In With Magic Link 
+                  Sign In
                 </button>
                 {/* <p className="text-sm text-neutral-500 text-center">
                   Don&apos;t have an account?
@@ -198,7 +200,7 @@ export default function Login() {
                     className="ml-1 text-white underline"
                     onClick={() => setView('sign-in-magic')}
                   >
-                    Sign In With Magic Link 
+                    Sign In
                   </button>
                 </p>
               </>
