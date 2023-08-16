@@ -66,7 +66,7 @@ export const ModelSelect = () => {
           className="flex items-center"
         >
           <IconExternalLink size={18} className={'inline mr-1'} />
-          <a href="www.google.com">Training material</a>
+          <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">Training material</a>
         </a>
       </div>
     </div>
