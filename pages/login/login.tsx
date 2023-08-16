@@ -102,7 +102,7 @@ export default function Login() {
             onSubmit={view === 'sign-in' ? handleSignIn : view === 'sign-in-magic' ? handleSignInWithMagicLink : handleSignUp}
           >
 
-            <div style={{textAlign: 'center'}}> GOPA Group AI Chatbot </div>
+            <div style={{textAlign: 'center', color: '#FECC00', fontSize: '16px' }}> GOPA Group AI Chatbot </div>
 
             
             <div className="flex justify-center mb-12">
