@@ -31,7 +31,7 @@ import logoImage from './logo.png';
     buubleBackground: {
         width: "100%",
         borderRadius: "25px",
-        background: "#73AD21",
+        background: "#FECC00",
         padding: "20px",
     },
 };
