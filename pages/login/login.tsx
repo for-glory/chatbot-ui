@@ -25,7 +25,7 @@ export default function Login() {
     },
     borderShadowStyles: {
         border: "1px solid orange",
-        padding: "12px",
+        padding: "18",
         color: "rgb(163 163 163/var(--tw-text-opacity))",
     },
     textStyles: {
@@ -121,7 +121,7 @@ export default function Login() {
 
                     <div className="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
                        <div className="min-w-[40px] text-right font-bold">
-                          <svg fill="#ffa200" width="64px" height="64px" viewBox="-441.6 -441.6 2803.20 2803.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffa200" stroke-width="0.019200000000000002">
+                          <svg fill="#ffa200" width="50px" height="50px" viewBox="-441.6 -441.6 2803.20 2803.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffa200" stroke-width="0.019200000000000002">
                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="38.4"></g>
                              <g id="SVGRepo_iconCarrier">
