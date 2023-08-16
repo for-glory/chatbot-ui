@@ -100,29 +100,8 @@ export default function Login() {
               />
             </div>   
             
-          
-            
-            <div>
-                <label className="text-md text-neutral-400">Accept terms and conditions</label>  
-                <input
-                        type="checkbox"
-                        checked={disabled}
-                        onChange={(e) => setDisabled(e.target.checked)}
-                 />
-            </div>
-            
 
-              <div>                  
-                  <input type="text" 
-                         className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
-                         style={Styles.divStyles}
-                         name="email"
-                         onChange={(e) => setEmail(e.target.value)}
-                         value={email}
-                         placeholder="you@example.com"
-                         disabled={!disabled} />
-              </div>
-            
+
               <div className="card mb-6" style={Styles.pStyles}>
                 <div className="card-body" style={Styles.borderShadowStyles}>
 
@@ -158,6 +137,29 @@ export default function Login() {
                   
                 </div>
               </div>
+
+            
+            
+            <div>
+                <label className="text-md text-neutral-400">Accept terms and conditions</label>  
+                <input
+                        type="checkbox"
+                        checked={disabled}
+                        onChange={(e) => setDisabled(e.target.checked)}
+                 />
+            </div>
+            
+
+              <div>                  
+                  <input type="text" 
+                         className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
+                         style={Styles.divStyles}
+                         name="email"
+                         onChange={(e) => setEmail(e.target.value)}
+                         value={email}
+                         placeholder="you@example.com"
+                         disabled={!disabled} />
+              </div>            
           
             {view !== 'sign-in-magic' ? (
               <>
