@@ -36,7 +36,7 @@ export const initialState: HomeInitialState = {
   lightMode: 'light',
   messageIsStreaming: false,
   modelError: null,
-  models: [gpt-4],
+  models: [GPT_4],
   folders: [],
   conversations: [],
   selectedConversation: undefined,
