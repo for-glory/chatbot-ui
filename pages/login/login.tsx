@@ -42,6 +42,11 @@ export default function Login() {
     textleftspace: {
        marginLeft: "16px",
     }, 
+    headText: {
+       textAlign: "center",
+       color: "#FECC00",
+       fontSize: "16px",
+    }, 
 };
 
   
@@ -97,9 +102,7 @@ export default function Login() {
             onSubmit={view === 'sign-in' ? handleSignIn : view === 'sign-in-magic' ? handleSignInWithMagicLink : handleSignUp}
           >
 
-            <div className="flex justify-center mb-12">
-              <h2>GOPA Group AI Chatbot</h2>
-            </div> 
+            <div style=""> GOPA Group AI Chatbot </div>
 
             
             <div className="flex justify-center mb-12">
