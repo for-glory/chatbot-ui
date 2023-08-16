@@ -160,7 +160,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
           )}
         </div>
 
-        <div className="prose mt-[-2px] w-full dark:prose-invert">
+        <div className="prose mt-[-2px] w-full dark:prose-invert" style={Styles.buubleBackground}>
           {message.role === 'user' ? (
             <div className="flex w-full">
               {isEditing ? (
