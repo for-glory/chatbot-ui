@@ -1,4 +1,5 @@
 import { IconRobot } from '@tabler/icons-react';
+import Image from 'next/image';
 import logoImage from './logo.png';
 import { FC } from 'react';
 
