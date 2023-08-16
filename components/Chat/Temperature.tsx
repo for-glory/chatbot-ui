@@ -11,6 +11,12 @@ interface Props {
   onChangeTemperature: (temperature: number) => void;
 }
 
+  const Styles = {
+    divStyles: {
+        display: none,
+    },
+};
+
 export const TemperatureSlider: FC<Props> = ({
   label,
   onChangeTemperature,
@@ -32,8 +38,14 @@ export const TemperatureSlider: FC<Props> = ({
   return (
     <div className="flex flex-col">
       <input
-        type="hidden"
+        style={Styles.divStyles}
+        className="cursor-pointer"
+        type="range"
+        min={0}
+        max={1}
+        step={0.1}
         value={0.7}
+        onChange={handleChange}
       />
     </div>
   );
