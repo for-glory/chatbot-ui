@@ -34,6 +34,7 @@ export default function Login() {
     InfoText: {
         twTextOpacity: "1",
         color: "rgb(163 163 163/var(--tw-text-opacity))",
+        fontSize: "14px",
     },  
     textLink: {
        color: "#a58d52",
