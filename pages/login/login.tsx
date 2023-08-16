@@ -25,7 +25,7 @@ export default function Login() {
     },
     borderShadowStyles: {
         border: "1px solid orange",
-        padding: "18",
+        paddingRight: "14px",
         color: "rgb(163 163 163/var(--tw-text-opacity))",
     },
     textStyles: {
