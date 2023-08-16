@@ -96,7 +96,7 @@ export default function Login() {
       <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
         {view === 'check-email' ? (
           <p className="text-center text-neutral-400">
-            Check <span className="font-bold" style={{color: 'black' }}>{email}</span> to
+            Check <span className="font-bold" style={{color: '#777' }}>{email}</span> to
             continue
           </p>
         ) : (
