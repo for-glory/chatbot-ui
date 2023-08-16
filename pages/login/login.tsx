@@ -96,6 +96,12 @@ export default function Login() {
             className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2"
             onSubmit={view === 'sign-in' ? handleSignIn : view === 'sign-in-magic' ? handleSignInWithMagicLink : handleSignUp}
           >
+
+            <div className="flex justify-center mb-12">
+              <h2>GOPA Group AI Chatbot</h2>
+            </div> 
+
+            
             <div className="flex justify-center mb-12">
               <Image
                 src={logoImage}
