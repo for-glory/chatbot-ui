@@ -23,6 +23,11 @@ import rehypeMathjax from 'rehype-mathjax';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
+
+import Image from 'next/image';
+import logoImage from './logo.png';
+
+
 export interface Props {
   message: Message;
   messageIndex: number;
