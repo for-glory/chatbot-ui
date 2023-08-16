@@ -156,7 +156,7 @@ export default function Login() {
               <div>                  
                   <input type="text" 
                          className="rounded-md px-4 py-2 bg-inherit border mb-6 text-neutral-100"
-                         style={Styles.divStyles}
+                         style={Styles.textleftspace}
                          name="email"
                          onChange={(e) => setEmail(e.target.value)}
                          value={email}
