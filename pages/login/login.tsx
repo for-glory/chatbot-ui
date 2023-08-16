@@ -19,6 +19,7 @@ export default function Login() {
   const Styles = {
     divStyles: {
         width: "100%",
+        color: "#424141",
     },
     pStyles: {
         background: "linear-gradient(60deg,#ef535000,#e5393533)",
