@@ -33,7 +33,7 @@ export const ModelSelect = () => {
       <div className="flex justify-center mb-12">
         <Image
           src={logoImage}
-          alt="Chatbot UI"
+          alt="GOPA Group AI Chatbot"
         />
       </div>
       <label className="mb-2 text-left text-neutral-700 dark:text-neutral-400">
