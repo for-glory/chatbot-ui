@@ -99,7 +99,7 @@ export default function Login() {
             <div className="flex justify-center mb-12">
               <Image
                 src={logoImage}
-                alt="Chatbot UI"
+                alt="GOPA Group AI Chatbot"
               />
             </div>   
             
