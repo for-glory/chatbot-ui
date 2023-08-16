@@ -39,6 +39,9 @@ export default function Login() {
        color: "#a58d52",
        textDecoration: "underline",
     },  
+    textleftspace: {
+       marginLeft: "16px",
+    }, 
 };
 
   
@@ -142,7 +145,7 @@ export default function Login() {
             
             <div>
                 <label className="text-md text-neutral-400">Accept terms and conditions</label>  
-                <input
+                <input  style={Styles.divStyles}
                         type="checkbox"
                         checked={disabled}
                         onChange={(e) => setDisabled(e.target.checked)}
