@@ -32,7 +32,7 @@ import logoImage from './logo.png';
         width: "100%",
         borderRadius: "25px",
         background: "#FECC00",
-        padding: "20px",
+        padding: "12px",
     },
 };
 
