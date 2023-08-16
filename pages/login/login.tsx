@@ -132,7 +132,7 @@ export default function Login() {
                        <div className="prose mt-[-2px] w-full dark:prose-invert">
                           <div className="flex flex-row">
                              <div className="prose dark:prose-invert flex-1">
-                                <p style={Styles.InfoText}>I confirm that I have completed the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">GOPA Group AI Training</a> and that I have read and agree with the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx">GOPA Group Policy on the Use of Generative AI</a>. 
+                                <p style={Styles.InfoText}>I confirm that I have completed the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx" style={{color: '#a58d52', textDecoration: 'underline' }}>GOPA Group AI Training</a> and that I have read and agree with the <a href="https://gopagroup.sharepoint.com/sites/GOPAGroup-LearningPlatform/SitePages/GOPA-Group-AI-Chatbot.aspx" style={{color: '#a58d52', textDecoration: 'underline' }}>GOPA Group Policy on the Use of Generative AI</a>. 
                                    I acknowledge the importance of adhering to these guidelines to maintain the integrity and effectiveness of our GOPA Group AI Chatbot</p>
                              </div>
                              <div className="md:-mr-8 ml-1 md:ml-0 flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start justify-end md:justify-start">
