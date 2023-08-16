@@ -34,6 +34,7 @@ export const ModelSelect = () => {
         <Image
           src={logoImage}
           alt="GOPA Group AI Chatbot"
+          width="220"
         />
       </div>
       <label className="mb-2 text-left text-neutral-700 dark:text-neutral-400">
