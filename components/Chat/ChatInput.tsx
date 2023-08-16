@@ -386,9 +386,7 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          ChatBot UI
         </a>
-        .{' '}
       </div>
     </div>
   );
