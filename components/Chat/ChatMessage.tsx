@@ -27,6 +27,15 @@ import remarkMath from 'remark-math';
 import Image from 'next/image';
 import logoImage from './logo.png';
 
+  const Styles = {
+    buubleBackground: {
+        width: "100%",
+        borderRadius: "25px",
+        background: "#73AD21",
+        padding: "20px",
+    },
+};
+
 
 export interface Props {
   message: Message;
