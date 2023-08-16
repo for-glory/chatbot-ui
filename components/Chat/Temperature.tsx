@@ -13,7 +13,7 @@ interface Props {
 
   const Styles = {
     divStyles: {
-        display: none,
+        display: "none",
     },
 };
 
