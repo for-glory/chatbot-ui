@@ -35,6 +35,7 @@ export const ModelSelect = () => {
           src={logoImage}
           alt="GOPA Group AI Chatbot"
           width="220"
+          style={{boxShadow: 'inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)' }}
         />
       </div>
       <label className="mb-2 text-left text-neutral-700 dark:text-neutral-400">
