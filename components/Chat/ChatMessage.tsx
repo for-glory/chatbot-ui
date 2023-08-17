@@ -33,6 +33,7 @@ import logoImage from './logo.png';
         borderRadius: "25px",
         background: "#FECC00",
         padding: "12px",
+        boxShadow: 'inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)',
     },
 };
 
