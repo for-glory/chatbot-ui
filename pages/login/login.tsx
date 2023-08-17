@@ -46,7 +46,7 @@ export default function Login() {
     }, 
     headText: {
        textAlign: "center",
-       color: "#7F7F7F",
+       color: "#F2F2F2",
        fontSize: "32px",
        marginBottom: "24px",
     }, 
