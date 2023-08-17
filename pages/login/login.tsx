@@ -95,6 +95,16 @@ export default function Login() {
     <div className="h-screen w-screen flex justify-center">
       <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
         {view === 'check-email' ? (
+
+            <div className="flex justify-center mb-12">
+              <Image
+                src={logoImage}
+                alt="GOPA Group AI Chatbot"
+                style={{boxShadow: 'inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)' }}
+              />
+            </div>  
+
+      
           <p className="text-center text-neutral-400">
             Check <span className="font-bold" style={{color: '#777' }}>{email}</span> to
             continue
