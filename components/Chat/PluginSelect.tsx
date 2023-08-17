@@ -87,15 +87,6 @@ export const PluginSelect: FC<Props> = ({
             ChatGPT
           </option>
 
-          {PluginList.map((plugin) => (
-            <option
-              key={plugin.id}
-              value={plugin.id}
-              className="dark:bg-[#343541] dark:text-white"
-            >
-              {plugin.name}
-            </option>
-          ))}
         </select>
       </div>
     </div>
