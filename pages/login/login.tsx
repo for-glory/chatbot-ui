@@ -96,7 +96,7 @@ export default function Login() {
       <div className="flex-1 flex flex-col w-full max-w-sm justify-center gap-2">
         {view === 'check-email' ? (
 
-            <div className="flex justify-center mb-12" style={{marginBottom: '22px' }}>
+            <div className="flex justify-center mb-12">
               <Image
                 src={logoImage}
                 alt="GOPA Group AI Chatbot"
