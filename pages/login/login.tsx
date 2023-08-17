@@ -43,6 +43,7 @@ export default function Login() {
     },  
     textleftspace: {
        marginLeft: "16px",
+       accentColor: "#fecc00",
     }, 
     headText: {
        textAlign: "center",
