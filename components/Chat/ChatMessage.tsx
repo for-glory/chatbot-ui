@@ -30,9 +30,10 @@ import logoImage from './logo.png';
   const Styles = {
     buubleBackground: {
         width: "100%",
-        borderRadius: "14px",
+        borderRadius: "25px",
         background: "#FECC00",
         padding: "12px",
+        boxShadow: 'inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)',
     },
 };
 
@@ -161,7 +162,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
           )}
         </div>
 
-        <div className="prose mt-[-2px] w-full dark:prose-invert" style={{display: 'block ruby' }}>
+        <div className="prose mt-[-2px] w-full dark:prose-invert">
           {message.role === 'user' ? (
             <div className="flex w-full" style={Styles.buubleBackground}>
               {isEditing ? (
@@ -208,7 +209,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                   {message.content}
                 </div>
               )}
-            </div>
+
               {!isEditing && (
                 <div className="md:-mr-8 ml-1 md:ml-0 flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start justify-end md:justify-start">
                   <button
@@ -225,6 +226,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                   </button>
                 </div>
               )}
+            </div>
           ) : (
             <div className="flex flex-row">
               <MemoizedReactMarkdown
