@@ -25,7 +25,7 @@ export default function Login() {
         background: "linear-gradient(60deg,#ef535000,#e5393533)",
     },
     borderShadowStyles: {
-        border: "1px solid orange",
+        border: "1px solid #424141",
         paddingRight: "14px",
         color: "rgb(163 163 163/var(--tw-text-opacity))",
     },
