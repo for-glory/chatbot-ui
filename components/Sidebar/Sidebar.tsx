@@ -58,7 +58,7 @@ const Sidebar = <T,>({
     <div>
       <div
         className={`fixed top-0 ${side}-0 z-40 flex h-full w-[260px] flex-none flex-col space-y-2 bg-[#202123] p-2 text-[14px] transition-all sm:relative sm:top-0`}
-         style={{backgroundColor: '#7F7F7F' }}
+         style={{backgroundColor: '#5C5B5B' }}
       >
         <div className="flex items-center">
           <button
