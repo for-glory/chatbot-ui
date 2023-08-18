@@ -30,10 +30,10 @@ import logoImage from './logo.png';
   const Styles = {
     buubleBackground: {
         width: "100%",
-        borderRadius: "25px",
+        borderRadius: "12px",
         background: "#FECC00",
         padding: "12px",
-        boxShadow: 'inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3)',
+        boxShadow: 'box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px',
     },
 };
 
