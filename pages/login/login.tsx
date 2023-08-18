@@ -38,7 +38,7 @@ export default function Login() {
         fontSize: "14px",
     },  
     textLink: {
-       color: "#a58d52",
+       color: "#FFCC00",
        textDecoration: "underline",
     },  
     textleftspace: {
