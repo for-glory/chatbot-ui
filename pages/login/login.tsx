@@ -22,7 +22,7 @@ export default function Login() {
         color: "#424141",
     },
     pStyles: {
-        background: "linear-gradient(60deg,#ef535000,#e5393533)",
+        background: "#F2F2F2",
     },
     borderShadowStyles: {
         border: "1px solid #424141",
