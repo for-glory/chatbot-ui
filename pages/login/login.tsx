@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { createClient } from '@supabase/supabase-js'
+
 
 
 
@@ -17,8 +18,9 @@ export default function Login() {
   const [view, setView] = useState('sign-in-magic')
   const router = useRouter()
 
-const supabase = createClientComponentClient()
-
+const supabaseUrl = 'http://51.104.18.215'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
   const Styles = {
     divStyles: {
