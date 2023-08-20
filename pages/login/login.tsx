@@ -19,7 +19,7 @@ export default function Login() {
   const router = useRouter()
 
 const supabaseUrl = 'http://51.104.18.215'
-const supabaseKey = process.env.SUPABASE_KEY
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabase = createClient(supabaseUrl, supabaseKey)
 
   const Styles = {
