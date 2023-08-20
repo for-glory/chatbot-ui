@@ -2,11 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@supabase/supabase-js'
-
-
-
-
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import Image from 'next/image'
 import { toast } from 'react-hot-toast'
 
@@ -17,10 +13,7 @@ export default function Login() {
   const [password, setPassword] = useState('')
   const [view, setView] = useState('sign-in-magic')
   const router = useRouter()
-
-const supabaseUrl = 'http://51.104.18.215'
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabase = createClient(supabaseUrl,supabaseKey)
+  const supabase = createClientComponentClient()
 
   const Styles = {
     divStyles: {
