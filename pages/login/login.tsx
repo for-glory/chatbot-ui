@@ -20,7 +20,7 @@ export default function Login() {
 
 const supabaseUrl = 'http://51.104.18.215'
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabase = createClient(supabaseUrl,supabaseKey)
 
   const Styles = {
     divStyles: {
