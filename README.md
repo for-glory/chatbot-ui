@@ -1,5 +1,11 @@
 # Chatbot UI
 
+## Customized for GOPA
+
+[GOPA Consulting Group](https://www.gopa-group.org/)
+
+Used Supabase for authentication.
+
 ## News
 
 Chatbot UI 2.0 is out as an updated, hosted product!
